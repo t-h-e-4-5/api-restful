@@ -1,0 +1,57 @@
+POST http://127.0.0.1:5000/user/add
+Content-Type: application/json
+
+{
+    "nom" : "ABA",
+    "prenom" : "Pulf",
+    "tel" : "933",
+    "password" : "kp",
+    "login" : "thhhh",
+    "email" : "thgtgt@gmail.com"
+}
+
+###
+
+GET http://127.0.0.1:5000/user/get/1
+
+###
+GET http://127.0.0.1:5000/user/getbyid
+Content-Type: application/json
+
+{
+    "id": "5"
+}
+
+###
+
+GET http://127.0.0.1:5000/user/get/all
+
+###
+
+PUT http://127.0.0.1:5000/user/update
+Content-Type: application/json
+
+{
+    "id" : "10",
+    "nom" : "ABA",
+    "prenom" : "Pulf",
+    "tel" : "933",
+    "password" : "kp",
+    "login" : "thhhh",
+    "email" : "thgtgt@gmail.com"
+}
+
+###
+
+DELETE http://127.0.0.1:5000/user/delete/5
+
+###
+
+PUT http://127.0.0.1:5000/user/changepwd
+Content-Type: application/json
+
+{
+    "login" : "bobsmith",
+    "password" : "hpp",
+    "nwpassword" : "theophile"
+}
